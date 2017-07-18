@@ -79,7 +79,7 @@
     </div>
   </div>
 
-  
+
 
   <h4 class="heading-primary">{{trans('resource.viewfile')}}</h4>
   <blockquote class="with-borders">
@@ -99,6 +99,14 @@
   <!-- POLL START -->
   @if(!empty($poll))
   {{ csrf_field() }}
+  <hr>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="fb-page" data-href="https://www.facebook.com/&#x425;&#x4af;&#x43d;&#x441;-&#x425;&#x4e9;&#x434;&#x4e9;&#x4e9;-&#x410;&#x436;-&#x410;&#x445;&#x443;&#x439;-&#x425;&#x4e9;&#x43d;&#x433;&#x4e9;&#x43d;-&#x4ae;&#x439;&#x43b;&#x434;&#x432;&#x44d;&#x440;&#x438;&#x439;&#x43d;-&#x42f;&#x430;&#x43c;-317636401956772/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/&#x425;&#x4af;&#x43d;&#x441;-&#x425;&#x4e9;&#x434;&#x4e9;&#x4e9;-&#x410;&#x436;-&#x410;&#x445;&#x443;&#x439;-&#x425;&#x4e9;&#x43d;&#x433;&#x4e9;&#x43d;-&#x4ae;&#x439;&#x43b;&#x434;&#x432;&#x44d;&#x440;&#x438;&#x439;&#x43d;-&#x42f;&#x430;&#x43c;-317636401956772/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/&#x425;&#x4af;&#x43d;&#x441;-&#x425;&#x4e9;&#x434;&#x4e9;&#x4e9;-&#x410;&#x436;-&#x410;&#x445;&#x443;&#x439;-&#x425;&#x4e9;&#x43d;&#x433;&#x4e9;&#x43d;-&#x4ae;&#x439;&#x43b;&#x434;&#x432;&#x44d;&#x440;&#x438;&#x439;&#x43d;-&#x42f;&#x430;&#x43c;-317636401956772/">Хүнс, Хөдөө Аж Ахуй, Хөнгөн Үйлдвэрийн Яам</a></blockquote></div>
+    </div>
+  </div>
+  <hr>
+
   <blockquote class="blockquote-secondary">
     <h6 class="heading-primary">{{trans('resource.polling')}}</h6>
   </blockquote>
@@ -122,7 +130,15 @@
   @endif
   <!-- POLL END -->
 </aside>
-
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <script>
 
 $(document).ready(function(){
