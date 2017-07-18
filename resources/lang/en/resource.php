@@ -10,7 +10,7 @@ return [
     |
     */
 
-    'logoText' => 'Khovd province',
+    'logoText' => 'Ministry of Food, Agriculture and Light Industry',
     'logoTag' => 'official website',
     'shorter' => 'Newsletter',
     'readmore' => 'Read more',
