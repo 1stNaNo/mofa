@@ -79,73 +79,7 @@
     </div>
   </div>
 
-  <div class="tabs mb-xlg">
-    <ul class="nav nav-tabs">
-      <li class="active"><a href="#sumsLink" data-toggle="tab" class="font12">{{trans('resource.weblinks.sums')}}</a></li>
-      <li><a href="#agentLink" data-toggle="tab" class="font12">{{trans('resource.weblinks.agency')}}</a></li>
-      <li><a href="#otherLink" data-toggle="tab" class="font12">{{trans('resource.weblinks.others')}}</a></li>
-    </ul>
-    <div class="nano" style="height: 200px;">
-      <div class="nano-content">
-        <div class="tab-content">
-          <div class="tab-pane active" id="sumsLink">
-                <ul class="simple-post-list">
-                  @foreach ($weblinks->where('category_id', 1) as $item)
-                    <li>
-                      <div class="post-image">
-                        <div class="img-thumbnail">
-                          <a href="{{$item->link}}">
-                            <img src="{{$item->img}}" alt="" style="height: 50px; width: 50px;">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="post-info">
-                        <a href="{{$item->link}}"><div style="overflow: hidden; height: 50px; font-size: 12px;line-height: 18px;">{{$item->source}}</div></a>
-                      </div>
-                    </li>
-                  @endforeach
-                </ul>
-          </div>
-          <div class="tab-pane" id="agentLink">
-              <ul class="simple-post-list">
-                @foreach ($weblinks->where('category_id', 2) as $item)
-                  <li>
-                    <div class="post-image">
-                      <div class="img-thumbnail">
-                        <a href="{{$item->link}}">
-                          <img src="{{$item->img}}" alt="" style="height: 50px; width: 50px;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="post-info">
-                      <a href="{{$item->link}}"><div style="overflow: hidden; height: 50px; font-size: 12px;line-height: 18px;">{{$item->source}}</div></a>
-                    </div>
-                  </li>
-                @endforeach
-              </ul>
-          </div>
-          <div class="tab-pane" id="otherLink">
-                <ul class="simple-post-list">
-                  @foreach ($weblinks->where('category_id', 3) as $item)
-                    <li>
-                      <div class="post-image">
-                        <div class="img-thumbnail">
-                          <a href="{{$item->link}}">
-                            <img src="{{$item->img}}" alt="" style="height: 50px; width: 50px;">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="post-info">
-                        <a href="{{$item->link}}"><div style="overflow: hidden; height: 50px; font-size: 12px;line-height: 18px;">{{$item->source}}</div></a>
-                      </div>
-                    </li>
-                  @endforeach
-                </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <h4 class="heading-primary">{{trans('resource.viewfile')}}</h4>
   <blockquote class="with-borders">

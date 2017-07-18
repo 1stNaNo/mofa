@@ -32,6 +32,10 @@ class ComposerServiceProvider extends ServiceProvider
         );
 
         View::composer(
+            'layouts.submain.foot', 'App\Http\ViewComposers\FooterComposer'
+        );
+
+        View::composer(
             'layouts.admin.chatusers', 'App\Http\ViewComposers\Admin\ChatUsersComposer'
         );
 
