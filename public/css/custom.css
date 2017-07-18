@@ -15,12 +15,15 @@
 }
 
 .logoDescripion p.logoText{
-  color: #09c;
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
 }
 .logoDescripion p.logoTag{
-  color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  width: 300px;
+  line-height: 19px;
 }
 .thumbnail_slider_area {
   display: inline;
@@ -107,15 +110,15 @@
 }
 
 .latest_newsarea {
-  border-bottom: 2px solid #09c;
-  border-top: 2px solid #09c;
+  border-bottom: 2px solid #ff6e00;
+  border-top: 2px solid #ff6e00;
 }
 .latest_newsarea span {
-  background-color: #09c;
+  background-color: #ff6e00;
   color: #fff;
 }
 .latest_newsarea span:after, .latest_newsarea span:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
-.latest_newsarea span:after { border-color: rgba(0, 153, 204, 0); border-left-color: #09c; border-width: 10px; margin-top: -10px; }
+.latest_newsarea span:after { border-color: rgba(0, 153, 204, 0); border-left-color: #ff6e00; border-width: 10px; margin-top: -10px; }
 .latest_newsarea span:before { border-color: rgba(0, 153, 204, 0); border-left-color: #0099cc; border-width: 11px; margin-top: -11px; }
 
 .single_category {
@@ -129,7 +132,7 @@
 	float: left;
 	display: inline;
 	width: 100%;
-	background: #09c;
+	background: #ff6e00;
 	text-align: center;
 }
 .category_title a {

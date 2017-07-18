@@ -25,7 +25,7 @@
                 </div>
               </div>
               <div class="post-info">
-                <a href="/post/{{$item->id}}"><div style="overflow: hidden; height: 50px; font-size: 12px;line-height: 18px;">{{$item->title}}</div></a>
+                <a href="/post/{{$item->id}}"><div style="overflow: hidden; height: 50px; font-size: 12px;line-height: 18px; color: #000;">{{$item->title}}</div></a>
                 <div class="post-meta">
                    {{$item->update_date}}
                 </div>

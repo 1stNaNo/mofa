@@ -2922,7 +2922,7 @@ window.theme = {};
 					var $logoTextWidth = parseInt($logoText.outerWidth(true)) + parseInt($logo.outerWidth(true) + 70);
 					$logoWrapper.parent().css({
 						'width': $logoTextWidth.toString() + "px",
-						'background-color': 'rgba(255, 255, 255, 0.5)'
+						'background-color': '#1f38a2'
 					});
 
 					if (self.options.stickyChangeLogoWrapper) {

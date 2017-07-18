@@ -5,7 +5,7 @@
     <script>
 
       $(document).ready(function(){
-        rss();
+        //rss();
       });
 
       function rss(){
@@ -72,11 +72,6 @@
       </div>
     </div>
   @endforeach
-
-  <h4>{{trans('resource.sums_news')}}</h4>
-  <div class="owl-carousel owl-theme show-nav-title" data-plugin-options='{"items": 3, "margin": 10, "loop": false, "nav": true, "dots": false}' id="externalCont">
-
-  </div>
 
   <div class="row">
     <div class="col-md-6">
